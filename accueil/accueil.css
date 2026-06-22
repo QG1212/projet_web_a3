@@ -1,5 +1,4 @@
-/* --- RESET DE BASE --- */
-/* Enlève la petite bordure blanche autour de toute la page */
+
 body {
     margin: 0;
     font-family: sans-serif; /* Optionnel, mais rend le texte plus moderne */
