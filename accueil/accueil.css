@@ -1,3 +1,100 @@
-header{
-    
+/* --- RESET DE BASE --- */
+/* Enlève la petite bordure blanche autour de toute la page */
+body {
+    margin: 0;
+    font-family: sans-serif; /* Optionnel, mais rend le texte plus moderne */
+}
+
+/* --- HEADER & NAVBAR --- */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 0.5em;
+}
+
+.titre {
+    margin: 1em;
+    font-size: 4em;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar-opt {
+    margin: 2em;
+    font-size: 3.5em;
+}
+
+.navbar-opt a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+/* --- SECTIONS --- */
+.contexte {
+    text-align: center;
+    color: white;
+    background-color: #333533;
+    padding: 3em 2em; /* On remplace les marges par du padding pour garder le fond gris */
+    margin: 0; /* On force la suppression des marges extérieures */
+}
+ 
+.titre-contexte {
+    color: white;
+    font-size: 3em;
+    margin-top: 0; /* Enlève l'espace blanc au-dessus */
+}
+
+.texte-contexte {
+    font-size: 1.5em;
+    margin-bottom: 0; /* Enlève l'espace blanc en-dessous */
+}
+
+/* Projets : ajout de padding pour aérer et suppression des marges */
+.img-projet1, .img-projet2, .img-projet3 {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centre le texte verticalement par rapport à l'image */
+    padding: 2em; /* Donne de l'espace à l'intérieur de la zone noire */
+    gap: 2em; /* Crée un espace entre l'image et le texte sans utiliser de margin */
+}
+
+.img-projet1 p, .img-projet2 p, .img-projet3 p {
+    margin: 0; /* Empêche le texte de créer des espaces blancs extérieurs */
+}
+
+/* --- FOOTER AMÉLIORÉ --- */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Répartit les 3 blocs uniformément */
+    align-items: center; /* Centre verticalement */
+    background-color: #1a1a1a; /* Fond gris très foncé pour contraster avec le noir des projets */
+    color: white;
+    padding: 3em 1em; /* Un espacement raisonnable */
+}
+
+.footer-opt {
+    text-align: center; /* Centre le texte de chaque petite section */
+}
+
+/* On enlève les puces disgracieuses de la liste des noms */
+.footer-opt ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-opt li {
+    margin-bottom: 0.5em; /* Aère un peu la liste des membres du groupe */
 }
